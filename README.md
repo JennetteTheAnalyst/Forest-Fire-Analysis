@@ -1,4 +1,4 @@
-# Forest-Fire-Analysis-Dashboard
+# Forest-Fire-Analysis
 
 ## Project Overview
 This project analyzes forest fire data to evaluate how variables such as moisture content, temperature, wind speed and other weather conditions influence fire occurrence and spread. The results highlight significant insights that can predict spatial trends, guide allocation of firefighting resources and improve strategies for reducing wildfire risks.
