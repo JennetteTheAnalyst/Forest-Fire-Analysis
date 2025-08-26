@@ -33,6 +33,14 @@ Data cleaning and pre-processing were carried out at the initial stage to ensure
 - Creating additional numeric columns
 - Data cleaning and formatting
 
+
+--What locations have the highest propensity to experience forest fires?
+use First_Class
+go
+select top 1 FFMC, Location, Season from Forest_fire
+where FFMC = (select Max(FFMC) from Forest_Fire)
+order by FFMC desc
+
 ## Exploratory Data Analysis (EDA)
 The EDA process examines the Forest Fire dataset to analyze variable distributions, detect anomalies and identify relationships between environmental factors and fire occurrence, thereby answering the following key questions:
 1. what Locations have the highest propensity to experience forest fires? 
