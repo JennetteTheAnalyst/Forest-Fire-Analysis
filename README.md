@@ -61,11 +61,11 @@ This analysis has several limitations; they include the following:
 2.	Timeframe Restriction: Data was collected over a limited period and does not reflect long-term climate trends such as global warming, which significantly affects fire frequency and severity.
 3.	Limited Variables: Important factors like vegetation type, soil moisture, human activities, lightning strikes and firefighting interventions are missing, limiting the explanatory power of the dataset.
 
-'--What locations have the highest propensity to experience forest fires?
+`--What locations have the highest propensity to experience forest fires?
 use First_Class
 go
 select top 1 FFMC, Location, Season from Forest_fire
 where FFMC = (select Max(FFMC) from Forest_Fire)
-order by FFMC desc'
+order by FFMC desc`
 
 
